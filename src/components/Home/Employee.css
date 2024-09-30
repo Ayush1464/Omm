@@ -1,0 +1,74 @@
+.employee-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.employee-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Increased gap between the cards */
+  margin-top: 5%;
+}
+
+.employee-card {
+  background-color:#f5f5dc;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 250px;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+  position: relative; /* For internal positioning */
+  overflow: hidden;
+}
+
+.employee-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease; /* Animation for image */
+}
+
+.employee-card:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.employee-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.employee-card p {
+  margin: 10px 0 0;
+  color: #555;
+}
+
+.employee-card:hover {
+  transform: translateY(-10px) scale(1.05); /* Lift the card slightly and enlarge */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for depth */
+}
+
+.employee-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.employee-card:hover::before {
+  opacity: 0.1; /* Subtle gradient background appears on hover */
+}
