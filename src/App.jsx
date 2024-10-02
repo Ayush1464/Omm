@@ -20,6 +20,17 @@ import Faq from './components/Faq/Faq'
 import Completed_projects from './components/Projects/Complete/Completed_projects'
 import ImageGallery from './components/Gallery/ImageGallery'
 import Services from './components/Products/Services/Services'
+import Solar from './components/Products/Solar/Solar'
+import Solar1 from './components/Products/Solar/Solar1'
+import Solar2 from './components/Products/Solar/Solar2'
+import Solar3 from './components/Products/Solar/Solar3'
+import Solar4 from './components/Products/Solar/Solar4'
+import Solar5 from './components/Products/Solar/Solar5'
+import Solar6 from './components/Products/Solar/Solar6'
+import Biogas from './components/Products/Solar/Biogas/BIogas'
+import Bulb2 from './components/Products/Bulb2'
+import Fan2 from './components/Products/Fan2'
+import Ac2 from './components/Products/Ac2'
 
 
 
@@ -39,14 +50,25 @@ const App = () => {
       <Route path="/Completed_projects" element={<Completed_projects />} />
       <Route path="/Product" element={<Product />} />
       <Route path="/Bulb" element={<Bulb />} />
+      <Route path="/Bulb2" element={<Bulb2 />} />
       <Route path="/Tube" element={<Tube />} />
       <Route path="/Fan" element={<Fan />} />
+      <Route path="/Fan2" element={<Fan2 />} />
       <Route path="/Ac" element={<Ac />} />
+      <Route path="/Ac2" element={<Ac2 />} />
       <Route path="/Induction" element={<Induction />} />
       <Route path="/Ebicycle" element={<Ebicycle />} />
       <Route path="/Faq" element={<Faq />} />
       <Route path="/ImageGallery" element={<ImageGallery />} />
       <Route path="/Services" element={<Services />} />
+      <Route path="/Solar" element={<Solar />} />
+      <Route path="/Solar1" element={<Solar1 />} />
+      <Route path="/Solar2" element={<Solar2 />} />
+      <Route path="/Solar3" element={<Solar3 />} />
+      <Route path="/Solar4" element={<Solar4 />} />
+      <Route path="/Solar5" element={<Solar5 />} />
+      <Route path="/Solar6" element={<Solar6 />} />
+      <Route path="/Biogas" element={<Biogas />} />
 
 
 

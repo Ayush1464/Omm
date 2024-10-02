@@ -4,53 +4,43 @@ import './ImageGallery.css'; // Make sure your CSS styles are here
 
 const images = [
   {
-    src: '/assets/ommproj1.jpeg',
+    src: '/assets/gallery1.jpeg',
     caption: 'Solar panels harnessing the power of the sun.',
   },
   {
-    src: '/assets/ommproj1.jpeg',
+    src: '/assets/gallery2.jpeg',
     caption: 'Solar arrays in open fields.',
   },
   {
-    src: '/assets/ommproj1.jpeg',
+    src: '/assets/gallery3.jpeg',
     caption: 'Innovative solar technology for homes.',
   },
   {
-    src: '/assets/ommproj1.jpeg',
+    src: '/assets/gallery4.jpeg',
     caption: 'Capturing solar energy on a large scale.',
   },
   {
-    src: '/assets/ommproj1.jpeg',
+    src: '/assets/gallery5.jpeg',
     caption: 'Clean energy for a greener planet.',
   },
   {
-    src: '/assets/ommproj1.jpeg',
+    src: '/assets/gallery6.jpeg',
+    caption: 'Solar innovation leading to a sustainable future.',
+  },
+  {
+    src: '/assets/gallery7.jpeg',
+    caption: 'Solar innovation leading to a sustainable future.',
+  },
+  {
+    src: '/assets/gallery8.jpeg',
     caption: 'Solar innovation leading to a sustainable future.',
   },
   {
     src: '/assets/ommproj1.jpeg',
     caption: 'Solar innovation leading to a sustainable future.',
   },
-  {
-    src: '/assets/ommproj1.jpeg',
-    caption: 'Solar innovation leading to a sustainable future.',
-  },
-  {
-    src: '/assets/ommproj1.jpeg',
-    caption: 'Solar innovation leading to a sustainable future.',
-  },
-  {
-    src: '/assets/ommproj1.jpeg',
-    caption: 'Solar innovation leading to a sustainable future.',
-  },
-  {
-    src: '/assets/ommproj1.jpeg',
-    caption: 'Solar innovation leading to a sustainable future.',
-  },
-  {
-    src: '/assets/ommproj1.jpeg',
-    caption: 'Solar innovation leading to a sustainable future.',
-  },
+
+ 
 ];
 
 const ImageGallery = () => {

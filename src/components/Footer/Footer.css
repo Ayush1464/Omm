@@ -88,19 +88,19 @@
 .footer3 p:hover {
   color: #ffcc00; 
 }
-
 @media (max-width: 768px) {
   .main_footer {
       flex-direction: column;
-      align-items: center;
   }
 
   .footer1, .footer2, .footer3 {
       max-width: none; 
-      text-align: center; 
+      text-align: left; /* Align text to the left */
       margin-bottom: 20px;
+      align-items: flex-start; /* Align the content to the start of the flex container */
   }
 }
+
 .lowerfooter {
   height: 15vh;
   display: flex;
@@ -119,8 +119,6 @@
   font-size: 14px;
 
 }
-
-
 .top{
   margin-right: 2%;
 }

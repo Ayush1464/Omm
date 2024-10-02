@@ -18,7 +18,7 @@ const Services = () => {
           <p>
             Explore our comprehensive solar services, including residential installations and large-scale solar projects.
           </p>
-          <Link to="/solar-services" className="service-link">
+          <Link to="/Solar" className="service-link">
             Learn More
           </Link>
         </div>
@@ -40,7 +40,7 @@ const Services = () => {
           <p>
             Learn about our bio gas solutions that convert organic waste into clean, renewable energy.
           </p>
-          <Link to="/bio-gas" className="service-link">
+          <Link to="/Biogas" className="service-link">
             Learn More
           </Link>
         </div>

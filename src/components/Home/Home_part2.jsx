@@ -18,29 +18,22 @@ const Home_part2 = () => {
        
         <div className='cardHome'>
           <img src={"/assets/ommproj1.jpeg"} alt="" />
-          <div className='project_animation'>
-            <p>Project Name </p>
-            <p>Project Description</p>
-          </div>
+          
         </div>
         <div className='cardHome'>
           <img src={"/assets/ommproj2.jpeg"} alt="" />
-          <div className='project_animation'>
-            <p>Project Name </p>
-            <p>Project Description</p>
-          </div>
+          
         </div>
         <div className='cardHome'>
           <img src={"/assets/ommproj3.jpeg"} alt="" />
-          <div className='project_animation'>
-            <p>Project Name </p>
-            <p>Project Description</p>
-          </div>
+          
         </div>
         
     </div>
     <Link to="/Complete">
-    <button className='service_button' style={{marginLeft:'42.5%'}}>See All Projects</button>
+    <div className="button-container">
+  <button className="service_button">See All Projects</button>
+</div>
     </Link>
     
    

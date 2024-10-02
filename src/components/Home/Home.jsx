@@ -9,6 +9,8 @@ import Ommvideo from './Ommvideo'
 import Home_part6 from './Home_part6'
 import Employee from './Employee'
 import ClientSection from './ClientSection'
+import Valuedcustomer from './Valuedcustomer'
+import Brands from './Brands'
 
 const Home = () => {
   return (
@@ -19,9 +21,12 @@ const Home = () => {
         <Home_part2/>
         <Home_part3/>
         <Home_part5/>
-        <Home_part6/>
+        {/* <Home_part6/> */}
         <ClientSection/>
+        <Valuedcustomer/>
+        
         <Employee/>
+        <Brands/>
 
     </>
   )

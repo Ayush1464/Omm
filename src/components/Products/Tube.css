@@ -1,33 +1,50 @@
 .tube-container {
-    display: flex; /* Flexbox for layout */
-    flex-direction: column;
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Padding around the container */
-    border: 1px solid #ccc; /* Light border around the container */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  }
-  
-  .tube-image {
-    width: 150px; /* Fixed width for the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between image and content */
-  }
-  
-  .tube-content {
-    flex: 1; /* Allow content to take available space */
-  }
-  
-  .tube-content h2 {
-    font-size: 1.8em; /* Size for the heading */
-    color: #2c3e50; /* Dark color for the heading */
-    margin: 0; /* Remove default margin */
-  }
-  
-  .tube-content p {
-    color: #555; /* Dark grey color for the paragraph */
-    line-height: 1.6; /* Improved line height for readability */
-    margin: 5px 0; /* Margin for paragraphs */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.tube-image {
+  width: 300px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+}
+
+.tube-content {
+  text-align: left;
+  padding: 0 20px;
+  max-width: 800px; /* Limit content width for readability */
+}
+
+.tube-content h2 {
+  font-size: 1.8em; /* Heading size */
+  color: #007bff; /* Heading color */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.tube-content p {
+  color: #555; /* Paragraph text color */
+  line-height: 1.6; /* Line height for readability */
+  font-size: 1.1em; /* Font size for paragraph text */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.tube-features {
+  margin-top: 20px; /* Space above the features list */
+  padding: 0; /* Remove padding */
+  list-style-type: none; /* Remove default list styling */
+  font-size: 1.1em; /* Font size for features list */
+}
+
+.tube-features li {
+  margin-bottom: 10px; /* Space between list items */
+  color: #333; /* Color for list items */
+}
+
+.tube-features li::before {
+  content: "•"; /* Bullet point */
+  color: #007bff; /* Color for bullet point */
+  padding-right: 10px; /* Space between bullet and text */
+}

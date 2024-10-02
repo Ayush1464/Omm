@@ -1,136 +1,67 @@
-body,
-html {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-.blue-bar {
-  height: 120px;
-  background: #2679d3;
-  color: white;
+.about_content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.valuesbold {
-  margin-top: 30px;
-  margin-left: 260px;
+.mission, .vision, .values {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%; /* Adjust as necessary */
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white; /* Change text color to white */
 }
 
-.value-mission {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
+.mission {
+  background-color: #ff69b4; /* Deep Pink */
 }
-.heading{
-  margin-top: 5%;
+
+.vision {
+  background-color: #1e90ff; /* Deep Blue */
 }
-.mission{
-  width: 80%;
-  margin-left: 10%;
+
+.values {
+  background-color: #32cd32; /* Deep Green */
 }
-.mission h1{
-  font-size: 20px;
+
+/* Image styles */
+.mission img,
+.vision img,
+.values img {
+  max-width: 100%; /* Ensures images do not exceed container width */
+  height: 50px; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+  margin-bottom: 15px; /* Space between image and heading */
+}
+
+/* Additional styles for headings and list */
+.about_content h1 {
+  margin: 10px 0; /* Space above and below headings */
+  color: white; /* Ensure main heading text color is also white */
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  color: white; /* Ensure list text color is white */
+}
+/* Add this to your CSS file */
+.underline {
+  width: 10%; /* Adjust width as necessary */
+  height: 4px; /* Height of the line */
+  background-color: #007bff; /* Change to your desired color */
+  margin-left: 2%;
+  margin-top: 2%;
+  
+}
+.mvv{
+  margin-left: 2%;
+  font-size: 30px;
   font-weight: 600;
 }
-
-.row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-
-}
-.row1 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    flex-direction: row-reverse;
-  }
-ul {
-  margin-left: 230px;
+.values-span{
+  color: #1e90ff;
 }
 
-h3, h1 {
-  color: black;
-}
-
-.ellipse {
-  background-color: #f80;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 12px;
-  margin: 10px;
-  position: relative;
-}
-
-.arrow {
-  width: 50px;
-  height: 20px;
-  display: flex;
-  align-self: center;
-  background-color: #007bff;
-}
-
-.arrow.right {
-  clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
-}
-
-.arrow.down {
-  clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
-  width: 20px;
-  height: 50px;
-  margin: 10px 0px;
-  margin-left: 750px;
-}
-
-.arrow.left {
-  clip-path: polygon(0% 50%, 100% 100%, 100% 0%);
-}
-
-.energy-text {
-  margin-top: 20px;
-  font-size: 16px;
-  color: #333;
-  text-align: center;
-}
-.mission {
-  opacity: 0;
-  transform: translateY(50px);
-  animation: fadeInUp 1s forwards;
-}
-
-.mission h1, .mission p, .mission ul {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s forwards;
-  animation-delay: 0.3s;
-}
-
-.mission ul li {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s forwards;
-  animation-delay: 0.5s;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}

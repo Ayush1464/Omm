@@ -12,7 +12,6 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    
     top: 0;
     left: 0;
     right: 0;
@@ -41,7 +40,8 @@ body {
     flex-direction: column;
     margin-top: 120px; /* Add margin to account for the fixed top bar */
 }
-.faq_content{
+
+.faq_content {
     display: flex;
 }
 
@@ -51,8 +51,9 @@ body {
     color: rgb(17, 2, 2);
     padding: 20px;
     width: 200px; /* Narrowed sidebar */
-    min-height: 100vh;
+    min-height: calc(100vh - 120px); /* Adjust height to fit viewport */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 .sidebar h1 {
@@ -119,4 +120,65 @@ body {
     margin: 0;
     color: #333;
     line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablet */
+    .faq_content {
+        flex-direction: column; /* Stack sidebar and main content */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width on smaller screens */
+        min-height: auto; /* Remove min-height for smaller screens */
+        margin-bottom: 20px; /* Space between sidebar and main content */
+    }
+
+    .main-content {
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .top-bar h1 {
+        font-size: 28px; /* Reduce font size for title */
+    }
+
+    .top-bar h2 {
+        font-size: 20px; /* Reduce font size for subtitle */
+    }
+
+    .sidebar h1 {
+        font-size: 20px; /* Reduce sidebar title size */
+    }
+
+    .faq-question {
+        font-size: 16px; /* Smaller question text */
+    }
+
+    .faq-answer {
+        font-size: 14px; /* Smaller answer text */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .top-bar h1 {
+        font-size: 24px; /* Further reduce font size for mobile */
+    }
+
+    .top-bar h2 {
+        font-size: 18px; /* Further reduce subtitle size */
+    }
+
+    .sidebar h1 {
+        font-size: 18px; /* Further reduce sidebar title size */
+    }
+
+    .faq-question {
+        font-size: 14px; /* Smaller question text */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .faq-answer {
+        font-size: 12px; /* Smaller answer text */
+        padding: 10px; /* Adjust padding */
+    }
 }
